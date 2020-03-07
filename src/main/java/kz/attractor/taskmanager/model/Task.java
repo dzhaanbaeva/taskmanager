@@ -28,6 +28,7 @@ public class Task {
     private String description;
     private TaskType taskType;
     private LocalDate date;
+    private  String images;
 
     private static String generateId() {
         return LocalDateTime.now().format(dtf) + r.nextInt();
@@ -114,5 +115,12 @@ public class Task {
 
     public void setDate(LocalDate date) {
         this.date = date;
+    }
+    public String getImages() {
+        return images;
+    }
+
+    public void setImages(String images) {
+        this.images = images;
     }
 }
